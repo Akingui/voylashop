@@ -6,6 +6,26 @@
     <title>Voyla - Продукты из семенной бумаги</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* 添加响应式视频样式 */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9宽高比 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,14 +45,24 @@
     </header>
 
     <main>
-        <section class="video-section">
+        
+                <section class="video-section">
             <div class="container">
-                <h2 data-lang="discover">Откройте для себя семенную бумагу</h2>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5mlu3AdWLNM?si=aHCpj0dhUo9Qm5OB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                <h2 data-lang="discover">Discover Seed Paper</h2>
+		<section class="video-section">
+        		<div class="container">
+            		<h2 data-lang="discover">Откройте для себя семенную бумагу</h2>
+            		<div class="video-container">
+                		<!-- 移除iframe的固定width和height属性 -->
+                		<iframe src="https://www.youtube.com/embed/5mlu3AdWLNM?si=aHCpj0dhUo9Qm5OB" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe>
             </div>
-        </section>
+        </div>
+    </section>
 
         <section class="contact-section">
             <div class="container">
